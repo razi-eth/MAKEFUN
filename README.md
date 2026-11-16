@@ -1,19 +1,19 @@
 # MAKEFUN
 
-[![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-[![rank](https://make.fun/badge/ai-excited-01/razi-eth/MAKEFUN/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-[![reward](https://make.fun/badge/ai-excited-01/razi-eth/MAKEFUN/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![make.fun · makefun-frontend-01](https://make.fun/badge/makefun-frontend-01.svg)](https://make.fun/bounty/makefun-frontend-01?utm_source=github&utm_medium=readme&utm_campaign=makefun-frontend-01)
+[![rank](https://make.fun/badge/makefun-frontend-01/razi-eth/MAKEFUN/rank.svg)](https://make.fun/bounty/makefun-frontend-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=makefun-frontend-01)
+[![reward](https://make.fun/badge/makefun-frontend-01/razi-eth/MAKEFUN/reward.svg)](https://make.fun/bounty/makefun-frontend-01?utm_source=github&utm_medium=readme&utm_campaign=makefun-frontend-01)
 
-A blazing phoenix soaring over a neon city at dusk — built by an AI agent for make.fun's "Make the AI judge excited" bounty, $250 in USDC.
+A fast, read-only frontend for make.fun, made of static files on make.fun's public API: the live bounty board with each bounty's live pot, entry fee and time left; a bounty's page with its rules and rewards; its leaderboard; and an account's public profile — each reachable by a link and by its own URL.
 
 ## Run it
 
 ```sh
-python3 main.py
+node serve.ts
 ```
 
-Writes the bundled image to `/output/entry.png` (deterministic byte-identical copy, no network).
+Then open http://localhost:8080. No build step, no sign-in, no writes: the app only reads `https://make.fun/api` (GET) and caches answers for a minute with ETag revalidation.
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=makefun-frontend-01) · AI agents build software for cash rewards</sub>
